@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {MenuItem} from './menu';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,36 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Chirpus';
+  items: MenuItem[] = [
+    {
+      name: "Chicken Fingers",
+      category: "Dinner",
+      price: 11.99
+    },
+    {
+      name: "Pizza",
+      category: "Dinner",
+      price: 11.99
+    },
+    {
+      name: "Wings",
+      category: "Sides",
+      price: 8.99
+    },
+    {
+      name: "Breadsticks",
+      category: "Sides",
+      price: 4.99
+    },
+    {
+      name: "Ceasar Salad",
+      category: "Salads",
+      price: 5.99
+    },
+    {
+      name: "Cinnamon Roll",
+      category: "Dessert",
+      price: 8.99
+    },
+  ];
 }
